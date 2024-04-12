@@ -43,7 +43,7 @@ global.disablegroup = process.env.DISABLE_GROUPS || "false", // disable bot in g
 
 global.MsgsInLog = process.env.MSGS_IN_LOG|| "false" // "true"  to see messages , "log" to open logs , "false" to hide logs messages
 global.userImages= process.env.USER_IMAGES || "https://telegra.ph/file/758549f0de2219884f387.jpg,https://telegra.ph/file/9498496b010dfb5900b80.jpg,https://telegra.ph/file/59bf80efbb6e6576b5a52.jpg,https://telegra.ph/file/ee0e191363161e88e4743.jpg" // ramadan Theme Images
-global.waPresence= process.env.WAPRESENCE ||  "set according to your need" ; // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
+global.waPresence= process.env.WAPRESENCE ||  "recording" ; // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
@@ -62,7 +62,7 @@ global.api_smd = "https://api-smd-1.vercel.app"
 global.scan = "https://suhail-md-vtsf.onrender.com/";
 
 
-global.SESSION_ID = process.env.SESSION_ID ||  "" ;
+global.SESSION_ID = process.env.SESSION_ID ||  "SUHAIL_08_28_04_12_ewogICJjcmVkcy5qc29uIjogIntcIm5vaXNlS2V5XCI6e1wicHJpdmF0ZVwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiU0lqbCtRK3pPWkliRjg1SC96ZDJreWJ4THRkcGYvUE83WldMTjgxMnlscz1cIn0sXCJwdWJsaWNcIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIlE0Y3pEdHo1NFdEeFpvamFTWGd1Vk1uNGpINXhJaEtJSEc2K1pKNCt2REk9XCJ9fSxcInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyXCI6e1wicHJpdmF0ZVwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiOEgrK045aE5WbXo5MDR3bUZ4SDlQNlVmUVIzRkJyK3VtNnZmMGsxWThVQT1cIn0sXCJwdWJsaWNcIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIk5kR2VVSk1ydndFZzllbWtUM1VnN1FQUXoxVmc5VmFQVzgyM2dtbHpsVm89XCJ9fSxcInNpZ25lZElkZW50aXR5S2V5XCI6e1wicHJpdmF0ZVwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiOEQzaWNiRDRDbjRYbXM1b09lcGZ3UG1RK0hCWlFLMHJoQUlBd280OHdrVT1cIn0sXCJwdWJsaWNcIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcImxvdGZ2TEhwVHkyMC9lcHY4bVNTL2JLTE1zRjhXU3hkeXlDOE9ibC9Idzg9XCJ9fSxcInNpZ25lZFByZUtleVwiOntcImtleVBhaXJcIjp7XCJwcml2YXRlXCI6e1widHlwZVwiOlwiQnVmZmVyXCIsXCJkYXRhXCI6XCJlTHpCWHRyQkNrMllYNW9YNWVtOC9XV1M1L1pnTy9EeXl6a2tISE1yUlZNPVwifSxcInB1YmxpY1wiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiL2pVNWtTemVQUUhPWC9jMGROVzNPWW9tNzJlSjU2VXg4cTZKNVVEMVRtTT1cIn19LFwic2lnbmF0dXJlXCI6e1widHlwZVwiOlwiQnVmZmVyXCIsXCJkYXRhXCI6XCJmNWdSbnNkeC9YUFFURlJiQlIwTW50dFRrcy9UNTgwRWtnZTRhWTJRRGo1YlY3UDRaQXVZKzNTV3hhMlJzdW1oS3pDUXUyTktMc2NlTnI0SnZhWXppQT09XCJ9LFwia2V5SWRcIjoxfSxcInJlZ2lzdHJhdGlvbklkXCI6NTIsXCJhZHZTZWNyZXRLZXlcIjpcIm9iQTdoNEpDVGhWMlpjNXd4ckVpaWxMYVpWWkxsWnlZRzc5NGoyUTZRdzg9XCIsXCJwcm9jZXNzZWRIaXN0b3J5TWVzc2FnZXNcIjpbe1wia2V5XCI6e1wicmVtb3RlSmlkXCI6XCIyMzQ5MDI3MzEzMTEyQHMud2hhdHNhcHAubmV0XCIsXCJmcm9tTWVcIjp0cnVlLFwiaWRcIjpcIjNBQURGNThCNTM1QjVBNDUxMzM4XCJ9LFwibWVzc2FnZVRpbWVzdGFtcFwiOjE3MTI5MTA0OTZ9LHtcImtleVwiOntcInJlbW90ZUppZFwiOlwiMjM0OTAyNzMxMzExMkBzLndoYXRzYXBwLm5ldFwiLFwiZnJvbU1lXCI6dHJ1ZSxcImlkXCI6XCIzQTY3QzIzMkQ3MTBBODlFRUM2QVwifSxcIm1lc3NhZ2VUaW1lc3RhbXBcIjoxNzEyOTEwNTAxfV0sXCJuZXh0UHJlS2V5SWRcIjozMSxcImZpcnN0VW51cGxvYWRlZFByZUtleUlkXCI6MzEsXCJhY2NvdW50U3luY0NvdW50ZXJcIjoxLFwiYWNjb3VudFNldHRpbmdzXCI6e1widW5hcmNoaXZlQ2hhdHNcIjpmYWxzZX0sXCJkZXZpY2VJZFwiOlwiYzhyZERHSVdUWmljZHZvaUxYME56d1wiLFwicGhvbmVJZFwiOlwiZTRiZjVhZjAtNDFmOS00ZGZjLThmOGQtOTQ5Mzg2NGFiZjNlXCIsXCJpZGVudGl0eUlkXCI6e1widHlwZVwiOlwiQnVmZmVyXCIsXCJkYXRhXCI6XCJLS2g5YXc2RVZUL2NwamVtZ0N3RGRxWWNLUFk9XCJ9LFwicmVnaXN0ZXJlZFwiOmZhbHNlLFwiYmFja3VwVG9rZW5cIjp7XCJ0eXBlXCI6XCJCdWZmZXJcIixcImRhdGFcIjpcIlkyaUhBeE91OFgrM29BVjVKRE5ib1NnSkJGUT1cIn0sXCJyZWdpc3RyYXRpb25cIjp7fSxcImFjY291bnRcIjp7XCJkZXRhaWxzXCI6XCJDTUxYdWJrSEVKdmg0N0FHR0FNZ0FDZ0FcIixcImFjY291bnRTaWduYXR1cmVLZXlcIjpcIi9NWllUUFZadCtMM25mN0FoN29qcnFkZnVVd004Z2pOcEh3M252Sm5yVzQ9XCIsXCJhY2NvdW50U2lnbmF0dXJlXCI6XCJNVTZhM3Q2cmtKci9zdTFyQVg2YXNwbVUycmlmT0FYZkxXWDRQdExBc21Fc0sxSUN0YjJzU29PNWsvaHI3RWNTQ29DUzdSSEVUOE4wUmpRRklNUzZoQT09XCIsXCJkZXZpY2VTaWduYXR1cmVcIjpcInRBdnRUQTNUMWdyQ1RncXEySTFrc3d5dys3clUzK2x3YWtNNjJJSG5iM2N5TnQ4OUVYWlBKSnZ3WjN1VWJqVVFWOEpCK1RtOWtEbktwb0tIRlh3UGdnPT1cIn0sXCJtZVwiOntcImlkXCI6XCIyMzQ5MDI3MzEzMTEyOjdAcy53aGF0c2FwcC5uZXRcIixcImxpZFwiOlwiMTMxMTgxNjIyMzQ1OTI2OjdAbGlkXCIsXCJuYW1lXCI6XCJUb3BzaG90dGHwn6qQXCJ9LFwic2lnbmFsSWRlbnRpdGllc1wiOlt7XCJpZGVudGlmaWVyXCI6e1wibmFtZVwiOlwiMjM0OTAyNzMxMzExMjo3QHMud2hhdHNhcHAubmV0XCIsXCJkZXZpY2VJZFwiOjB9LFwiaWRlbnRpZmllcktleVwiOntcInR5cGVcIjpcIkJ1ZmZlclwiLFwiZGF0YVwiOlwiQmZ6R1dFejFXYmZpOTUzK3dJZTZJNjZuWDdsTURQSUl6YVI4TjU3eVo2MXVcIn19XSxcInBsYXRmb3JtXCI6XCJpcGhvbmVcIixcImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcFwiOjE3MTI5MTA0OTQsXCJteUFwcFN0YXRlS2V5SWRcIjpcIkFBQUFBRXVOXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRXVOLmpzb24iOiAie1wia2V5RGF0YVwiOlwiZkxpRnhqU3BSRmtuZVRpTTFUQmE5UUpSYW4rcmRNRUtpZ3hQay9naGtjMD1cIixcImZpbmdlcnByaW50XCI6e1wicmF3SWRcIjoxOTk5NTMwOTQ2LFwiY3VycmVudEluZGV4XCI6MSxcImRldmljZUluZGV4ZXNcIjpbMSwwXX0sXCJ0aW1lc3RhbXBcIjpcIjE3MTI2NDUzODMyODdcIn0iCn0=" ;
 
 
 module.exports = {
@@ -74,18 +74,17 @@ module.exports = {
   VERSION : process.env.VERSION || "1.3.1",
   caption : process.env.CAPTION || "©sᴜʜᴀɪʟ²²¹-ᴍᴅ" , // ```『 ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʜᴀɪʟ²²¹-ᴍᴅ 』```", //*『sᴜʙsᴄʀɪʙᴇ • sᴜʜᴀɪʟ ᴛᴇᴄʜ』*\n youtube.com/@suhailtechinfo0"),
  
-  author : process.env.PACK_AUTHER|| "Suhail-MD",
+  author : process.env.PACK_AUTHER|| "TOPSHOTTTTAA",
   packname: process.env.PACK_NAME || "♥️",
   botname : process.env.BOT_NAME  || "Satoru-MD",
-  ownername:process.env.OWNER_NAME|| "Topshotta",
+  ownername:process.env.OWNER_NAME|| "Topshotta🎭,
 
 
-  errorChat : process.env.ERROR_CHAT || "",
-  KOYEB_API : process.env.KOYEB_API  || "false",
+  errorChat : process.env.ERROR_CHAT || "",  KOYEB_API : process.env.KOYEB_API  || "false",
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
+  HEROKU_API_KEY: process.env.HEROKU_API_KEY || "HRKU-107532c1-fa23-44a3-8201-79f975f910b3",
   HEROKU_APP_NAME:process.env.HEROKU_APP_NAME|| "",
   antilink_values:process.env.ANTILINK_VALUES|| "all",
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
